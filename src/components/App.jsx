@@ -25,7 +25,7 @@ function App() {
   };
 
   const handleAddClick = () => {
-    setActiveModal("add-garment");
+    setActiveModal("modalWithForm");
   };
 
   const handleCloseClick = () => {
@@ -53,7 +53,7 @@ function App() {
         handleCloseClick={handleCloseClick}
       >
         <fieldset className="modal__inputs">
-          <label htmlFor="name" className="modal__label">
+          <label className="modal__label">
             Name
             <input
               type="text"
@@ -63,7 +63,7 @@ function App() {
               required
             ></input>
           </label>
-          <label htmlFor="imageUrl" className="modal__label">
+          <label className="modal__label">
             Image
             <input
               type="url"
@@ -77,7 +77,7 @@ function App() {
 
         <fieldset className="modal__radio-buttons">
           <legend className="modal__legend">Select the weather type:</legend>
-          <label htmlFor="hot" className="modal__label modal__label_type_radio">
+          <label className="modal__label modal__label_type_radio">
             <input
               type="radio"
               className="modal__input modal__radio-input"
@@ -86,10 +86,7 @@ function App() {
             />
             Hot
           </label>
-          <label
-            htmlFor="warm"
-            className="modal__label modal__label_type_radio"
-          >
+          <label className="modal__label modal__label_type_radio">
             <input
               type="radio"
               className="modal__input modal__radio-input"
@@ -98,10 +95,7 @@ function App() {
             />
             Warm
           </label>
-          <label
-            htmlFor="cold"
-            className="modal__label modal__label_type_radio"
-          >
+          <label className="modal__label modal__label_type_radio">
             <input
               type="radio"
               className="modal__input modal__radio-input"
