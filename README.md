@@ -10,7 +10,7 @@
 
 **Example Image**
 
-![Example Image](https://github.com/jeremycomstock/se_project_wtwr/src/assets/example.png?raw=true)
+![Example Image](https://i.imgur.com/XxDXCmU.png)
 
 **Github Pages Link**
 
