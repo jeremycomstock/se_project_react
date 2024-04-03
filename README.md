@@ -1,9 +1,15 @@
-# WTWR (What to Wear?)
+# Project 10: WTWR
 
-## About the project
+### Description
 
-The idea of the application is pretty simple - we make a call to an API, which then responds with the daily weather forecast. We collect the weather data, process it, and then based on the forecast, we recommend suitable clothing to the user.
+    WTWR is a website designed to help you figure out What To Wear on any given day, based on the weather in your area.
 
-## Links
+### Technologies
 
-- [Figma Design](https://www.figma.com/file/DTojSwldenF9UPKQZd6RRb/Sprint-10%3A-WTWR)
+    WTWR utilizes a weather API to determine your approximate location and the current time and weather in that area, in order to best help you decide What To Wear when you go out.
+
+### Example Image
+
+![example](https://github.com/jeremycomstock/se_project_wtwr/src/assets/example.png?raw=true)
+
+### Github Pages Link
