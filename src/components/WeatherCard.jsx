@@ -18,16 +18,14 @@ function WeatherCard({ weatherData }) {
   }
 
   return (
-    <>
-      <section className="weather-card">
-        <p className="weather-card__info">{weatherData.fahrenheit}°F</p>
-        <img
-          src={weatherOption?.url}
-          alt={weatherOption?.condition}
-          className="weather-card__image"
-        ></img>
-      </section>
-    </>
+    <section className="weather-card">
+      <p className="weather-card__info">{weatherData.fahrenheit}°F</p>
+      <img
+        src={weatherOption?.url}
+        alt={weatherOption?.condition}
+        className="weather-card__image"
+      ></img>
+    </section>
   );
 }
 

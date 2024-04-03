@@ -6,7 +6,7 @@ const processRequest = (res) => {
   }
 };
 
-export const getWeather = ({ latitude, longitude }, APIkey) => {
+export const getWeather = ({ longitude, latitude }, APIkey) => {
   return fetch(
     `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${APIkey}`
   ).then(processRequest);
@@ -15,6 +15,10 @@ export const getWeather = ({ latitude, longitude }, APIkey) => {
 export const filterWeatherData = (data) => {
   const result = {};
   const tempNumber = Number(data.main.temp);
+  result.coordinates = {
+    longitude: data.coord.lon,
+    latidude: data.coord.lat,
+  };
   result.city = data.name;
   result.fahrenheit = Math.floor(tempNumber);
   result.celsius = Math.floor((tempNumber - 32) * (5 / 9));
