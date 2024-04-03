@@ -6,7 +6,7 @@ import { defaultClothingItems } from "../utils/constants.js";
 
 function Main({ weatherData, handleCardClick }) {
   return (
-    <main class="content">
+    <main className="content">
       <WeatherCard weatherData={weatherData} />
       <section className="cards">
         <p className="cards__text">
