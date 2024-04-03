@@ -1,0 +1,19 @@
+.cards {
+}
+
+.cards__text {
+  margin: 40px 0 34px;
+  font-family: "Cabinet Grotesk";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.cards__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+  grid-gap: 19px;
+  justify-items: center;
+}

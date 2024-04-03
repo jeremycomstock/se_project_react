@@ -1,0 +1,110 @@
+.header {
+  padding: 32px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__greeting {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+}
+
+.header__date-and-location {
+  margin: 0 0 0 24px;
+  font-family: "Cabinet Grotesk";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 740px;
+}
+
+.header__button__add_clothes {
+  padding: 0;
+  margin: 0 20px 0;
+  border: none;
+  background-color: rgb(0, 0, 0, 0);
+  font-family: "Cabinet Grotesk";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  transition: color 0.2s ease-in-out;
+}
+
+.header__button__add_clothes:hover {
+  cursor: pointer;
+  color: #ff4d00;
+}
+
+.header__profile {
+  display: flex;
+  align-items: center;
+}
+
+.header__name {
+  margin: 0;
+  font-family: "Cabinet Grotesk";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  transition: color 0.2s ease-in-out;
+}
+
+.header__name:hover {
+  cursor: pointer;
+  color: #ff4d00;
+}
+
+.header__avatar {
+  margin: 0 0 0 12px;
+  height: 40px;
+  width: 40px;
+}
+
+.header__avatar:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .header__menu {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .header {
+    margin: 0 5px 0;
+  }
+
+  .header__date-and-location {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .header__button__add_clothes {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .header__profile {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header__name {
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+  }
+
+  .header__avatar {
+    margin: 5px 0 0;
+  }
+}

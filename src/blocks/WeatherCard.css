@@ -1,0 +1,26 @@
+.weather-card {
+  margin: 28px auto 0;
+  height: 80px;
+  position: relative;
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.weather-card__info {
+  margin: 0;
+  font-family: "Cabinet Grotesk";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 16px;
+}
+
+.weather-card__image {
+  object-fit: cover;
+  object-position: right top;
+  width: 100%;
+}
