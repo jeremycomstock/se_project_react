@@ -50,7 +50,6 @@ function App() {
         isOpen={activeModal === "add-garment"}
         title="New garment"
         buttonText="Add garment"
-        activeModal={activeModal}
         handleCloseClick={handleCloseClick}
       >
         <fieldset className="modal__inputs">
@@ -109,7 +108,6 @@ function App() {
       </ModalWithForm>
       <ItemModal
         isOpen={activeModal === "preview"}
-        activeModal={activeModal}
         card={selectedCard}
         handleCloseClick={handleCloseClick}
       />

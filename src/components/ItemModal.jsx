@@ -1,6 +1,6 @@
 import "../blocks/ItemModal.css";
 
-function ItemModal({ isOpen, activeModal, card, handleCloseClick }) {
+function ItemModal({ isOpen, card, handleCloseClick }) {
   return (
     <div className={`modal ${isOpen ? "modal_opened" : ""}`}>
       <div className="modal__content modal__content_type_image">
