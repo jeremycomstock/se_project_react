@@ -14,7 +14,7 @@ function Header({ handleAddClick, weatherData }) {
     <header className="header">
       <div className="header__greeting">
         {" "}
-        <Link to="/se_project_wtwr/">
+        <Link to="/">
           {" "}
           <img className="header__logo" src={headerLogo} alt="WTWR Logo" />
         </Link>
@@ -34,7 +34,7 @@ function Header({ handleAddClick, weatherData }) {
         </button>
         <div className="header__profile">
           {" "}
-          <Link to="/se_project_wtwr/profile" className="header__link">
+          <Link to="/profile" className="header__link">
             {" "}
             <p className="header__name">Jeremy Comstock</p>
             <img className="header__avatar" src={headerAvatar} alt="Avatar" />

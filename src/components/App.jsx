@@ -95,7 +95,7 @@ function App() {
 
         <Routes>
           <Route
-            path="/se_project_wtwr/"
+            path="/"
             element={
               <Main
                 weatherData={weatherData}
@@ -105,7 +105,7 @@ function App() {
             }
           />
           <Route
-            path="/se_project_wtwr/profile"
+            path="/profile"
             element={
               <Profile
                 handleAddClick={handleAddClick}

@@ -1,3 +1,4 @@
+import "../blocks/DeleteConfirmationModal.css";
 import React, { useState } from "react";
 
 const DeleteConfirmationModal = ({

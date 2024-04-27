@@ -2,6 +2,7 @@ import "../blocks/Main.css";
 import "../blocks/Cards.css";
 import WeatherCard from "./WeatherCard.jsx";
 import ItemCard from "./ItemCard.jsx";
+import { CurrentTemperatureUnitContext } from "../contexts/CurrentTemperatureUnitContext.js";
 
 function Main({ weatherData, onCardClick, clothingItems }) {
   return (
