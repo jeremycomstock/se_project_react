@@ -20,8 +20,8 @@ export const filterWeatherData = (data) => {
     latidude: data.coord.lat,
   };
   result.city = data.name;
-  result.fahrenheit = Math.floor(tempNumber);
-  result.celsius = Math.floor((tempNumber - 32) * (5 / 9));
+  result.fahrenheit = Math.round(tempNumber);
+  result.celsius = Math.round((tempNumber - 32) * (5 / 9));
   result.feelsLike = getWeatherType(result.fahrenheit);
   result.condition = data.weather[0].main.toLowerCase();
   result.isDay = isDay(data.sys, Date.now());

@@ -1,0 +1,21 @@
+.profile {
+  margin: 47px 0 0;
+  display: flex;
+  gap: 116px;
+}
+
+.profile__clothes-section {
+  width: 100%;
+}
+
+@media screen and (max-width: 1480px) {
+  .profile {
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .page {
+    margin: 0 5px 0;
+  }
+}

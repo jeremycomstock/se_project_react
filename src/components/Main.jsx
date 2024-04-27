@@ -2,9 +2,8 @@ import "../blocks/Main.css";
 import "../blocks/Cards.css";
 import WeatherCard from "./WeatherCard.jsx";
 import ItemCard from "./ItemCard.jsx";
-import { defaultClothingItems } from "../utils/constants.js";
 
-function Main({ weatherData, handleCardClick }) {
+function Main({ weatherData, onCardClick, clothingItems }) {
   return (
     <main className="content">
       <WeatherCard weatherData={weatherData} />
@@ -14,7 +13,7 @@ function Main({ weatherData, handleCardClick }) {
         </p>
 
         <ul className="cards__list">
-          {defaultClothingItems
+          {clothingItems
             .filter((item) => {
               return item.weather === weatherData.feelsLike;
             })
@@ -23,7 +22,7 @@ function Main({ weatherData, handleCardClick }) {
                 <ItemCard
                   key={item._id}
                   item={item}
-                  onCardClick={handleCardClick}
+                  onCardClick={onCardClick}
                 />
               );
             })}
