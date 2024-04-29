@@ -1,8 +1,6 @@
-const baseUrl = "http://localhost:3001";
+import { processServerResponse } from "./utils";
 
-function processServerResponse(res) {
-  return res.ok ? res.json() : Promise.reject(`Error: ${res.status}`);
-}
+const baseUrl = "http://localhost:3001";
 
 function getItems() {
   return fetch(`${baseUrl}/items`).then(processServerResponse);

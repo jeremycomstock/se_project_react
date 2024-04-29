@@ -35,9 +35,9 @@ function App() {
     addItem(values)
       .then((newItem) => {
         setClothingItems([newItem, ...clothingItems]);
+        setActiveModal("");
       })
       .catch(console.error);
-    setActiveModal("");
   };
 
   const handleAddClick = () => {
@@ -57,15 +57,13 @@ function App() {
     deleteItem(card._id)
       .then(() => {
         setClothingItems(clothingItems.filter((item) => item._id !== card._id));
+        setActiveModal("");
       })
       .catch(console.error);
-    setActiveModal("");
   };
 
   const handleToggleSwitchChange = () => {
-    currentTemperatureUnit === "°F"
-      ? setCurrentTemperatureUnit("°C")
-      : setCurrentTemperatureUnit("°F");
+    setCurrentTemperatureUnit(currentTemperatureUnit === "°F" ? "°C" : "°F");
   };
 
   useEffect(() => {

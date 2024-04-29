@@ -1,5 +1,5 @@
 import "../blocks/AddItemModal.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ModalWithForm from "./ModalWithForm.jsx";
 
 const AddItemModal = ({ isOpen, onAddItem, handleCloseClick }) => {
@@ -25,6 +25,14 @@ const AddItemModal = ({ isOpen, onAddItem, handleCloseClick }) => {
     setLink("");
     setTemperature("");
   };
+
+  useEffect(() => {
+    if (isOpen) {
+      setName("");
+      setLink("");
+      setTemperature("");
+    }
+  }, [isOpen]);
 
   return (
     <ModalWithForm

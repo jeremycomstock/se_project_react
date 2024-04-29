@@ -8,20 +8,13 @@ function WeatherCard({ weatherData }) {
     CurrentTemperatureUnitContext
   );
 
-  const filteredWeatherOptions = weatherOptions.filter((option) => {
-    return (
-      option.day === weatherData.isDay &&
-      option.condition === weatherData.condition
-    );
+  const filteredWeatherOptions = weatherOptions.find((option) => {
+    weatherData
+      ? option.day === weatherData.isDay &&
+        option.condition === weatherData.condition
+      : option.isDay === "day" && option.condition === "clear";
+    return option.isDay, option.condition;
   });
-
-  let weatherOption;
-  if (filteredWeatherOptions.length === 0) {
-    weatherOption = defaultWeatherOptions[weatherData.isDay ? "day" : "night"];
-    weatherOption.condition = weatherData.isDay ? "day" : "night";
-  } else {
-    weatherOption = filteredWeatherOptions[0];
-  }
 
   let currentTemp;
   if (currentTemperatureUnit === "°F") {
@@ -37,8 +30,8 @@ function WeatherCard({ weatherData }) {
         {currentTemperatureUnit}
       </p>
       <img
-        src={weatherOption?.url}
-        alt={weatherOption?.condition}
+        src={filteredWeatherOptions?.url}
+        alt={filteredWeatherOptions?.condition}
         className="weather-card__image"
       ></img>
     </section>

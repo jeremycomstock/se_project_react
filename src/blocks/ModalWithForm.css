@@ -32,6 +32,14 @@
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
+.modal__content_type_image {
+  width: 498px;
+  height: 610px;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
 .modal__title {
   margin: 0 0 24px;
   font-family: "Cabinet Grotesk";
